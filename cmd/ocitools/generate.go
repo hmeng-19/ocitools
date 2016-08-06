@@ -101,6 +101,8 @@ var generateCommand = cli.Command{
 }
 
 func setupSpec(g *generate.Generator, context *cli.Context) error {
+	g.OS = runtime.GOOS
+
 	if context.GlobalBool("host-specific") {
 		g.HostSpecific = true
 	}

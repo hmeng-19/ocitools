@@ -23,6 +23,7 @@ var (
 type Generator struct {
 	spec         *rspec.Spec
 	HostSpecific bool
+	OS           string
 }
 
 // New creates a spec Generator with the default spec.
